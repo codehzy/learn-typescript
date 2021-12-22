@@ -15,5 +15,6 @@ git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 git push -f git@github.com:codehzy/learn-typescript.git master:gh-pages
+git push -f git@gitee.com:codehzy/learn-typescript.git master:gh-pages
 
 cd -
