@@ -1,5 +1,9 @@
 #!/usr/bin/env sh
 
+# 提交源代码到远程分支
+git push git@github.com:codehzy/learn-typescript.git master
+git push git@gitee.com:codehzy/learn-typescript.git master
+
 # 确保脚本抛出遇到的错误
 set -e
 
@@ -14,8 +18,6 @@ git add -A
 git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push git@github.com:codehzy/learn-typescript.git master
-git push git@gitee.com:codehzy/learn-typescript.git master
 git push -f git@github.com:codehzy/learn-typescript.git master:gh-pages
 git push -f git@gitee.com:codehzy/learn-typescript.git master:gh-pages
 
