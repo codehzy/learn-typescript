@@ -35,9 +35,17 @@ module.exports = {
           { title: '条件类型', path: '/handbook/ConditionalTypes' },
           { title: '泛型', path: '/handbook/Generics' }
         ]
+      },
+      {
+        title: '用好TS',
+        path: '/handbook/betterForTs',
+        collapsable: false, //折叠
+        children: [
+          { title: '怎样在项目中用好TS', path: '/handbook/betterForTs' },
+        ]
       }
     ],
-    // 开始多级标题展示
-    subSideBar: 'auto'
+    subSidebar: 'auto', //在所有页面中启用自动生成子侧边栏，原 sidebar 仍然兼容,
+    codeTheme: 'tomorrow'
   }
 }
